@@ -1,0 +1,45 @@
+style: is-light
+height: is-medium
+items:
+  - title: 
+    icon: fa-registered
+    description: > 
+    call_to_action_name: Marchi
+    call_to_action_link: /marchi/
+  - title: 
+    icon: fa-cogs
+    description: >
+    call_to_action_name: Brevetti
+    call_to_action_link: /brevetti/
+  - title: 
+    icon: fa-draw-polygon
+    description: >
+    call_to_action_name: Disegni e Modelli
+    call_to_action_link: /disegniemodelli/
+  - title: 
+    icon: fa-copyright
+    description: >
+    call_to_action_name: Diritti D'autore
+    call_to_action_link: /dirittidautore/
+  - title: 
+    icon: fa-bridge-lock
+    description: >
+    call_to_action_name: Segreti Industriali
+    call_to_action_link: /segretiindustriali/
+  - title: 
+    icon: fa-window-restore
+    description: >
+    call_to_action_name: Nomi a Dominio
+    call_to_action_link: /nomiadominio/
+  - title: 
+    icon: fa-cubes
+    description: >
+    call_to_action_name: Blockchain
+    call_to_action_link: /blockchain/
+  - title: 
+    icon: fa-code
+    description: >
+    call_to_action_name: Software
+    call_to_action_link: /software/
+  
+  

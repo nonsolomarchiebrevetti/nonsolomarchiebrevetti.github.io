@@ -1,0 +1,47 @@
+- name: Chi Siamo
+  link: /chisiamo/
+- name: Servizi
+  link: /#
+  dropdown:
+    - name: Marchi
+      link: /marchi/
+    - name: Brevetti
+      link: /brevetti/
+    - name: Disegni e Modelli
+      link: /disegniemodelli/
+    - name: Diritti D'Autore
+      link: /dirittidautore/
+    - name: Segreti Industriali e Know How
+      link: /segretiindustriali/
+    - name: Nomi a Dominio
+      link: /nomiadominio/
+    - name: Blockchain
+      link: /blockchain/
+    - name: Software
+      link: /software/
+- name: Consulenza
+  link: /#
+  dropdown:
+    - name: Ricerche di Anterioritá
+      link: /ricercheanteriorita/
+    - name: Sorveglianza Doganale e Concorrenza
+      link: /sorveglianza/
+    - name: Contrattualistica
+      link: /contrattualistica/
+    - name: Contenzioso
+      link: /contenzioso/
+    - name: Due Diligence
+      link: /duediligence/
+    - name: Web Protection
+      link: /webprotection/
+- name: Settori
+  link: /#
+  dropdown:
+    - name: Aziende
+      link: /aziende/
+    - name: Start-up e Privati
+      link: /startup-privati/
+    
+- name: Contatti
+  link: /contatti/ 
+    
