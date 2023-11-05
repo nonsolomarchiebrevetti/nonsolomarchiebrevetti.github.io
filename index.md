@@ -2,7 +2,7 @@
 title: Non Solo Marchi&Brevetti
 subtitle: La tua innovazione, la nostra protezione.
 layout: page
-hero_image: /bulma-clean-theme/img/slide2.png
+hero_image: /img/slide2.png
 callouts: servizi
 show_sidebar: false
 ---
