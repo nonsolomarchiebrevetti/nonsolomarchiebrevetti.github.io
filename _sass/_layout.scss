@@ -2,20 +2,11 @@ div.highlight {
     margin-bottom: 1rem;
 }
 
-@include desktop {
-    .navbar-item {
-        &.is-hoverable:hover {
-            .navbar-dropdown {
-                display: block;
-            }
-        }
-    }
-    .logo {
-        width: 10rem; /* Adjust the width to your desired size */
-        height: auto; /* Maintain the aspect ratio */
-    }
-}
 
+.logo {
+    width: 10rem; /* Adjust the width to your desired size */
+    height: auto; /* Maintain the aspect ratio */
+}
 
 
 .contents {

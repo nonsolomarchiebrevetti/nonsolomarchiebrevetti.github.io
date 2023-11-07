@@ -1,38 +1,37 @@
-<nav class="navbar is-primary {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}" x-data="{ openNav: false }">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary {% if site.fixed_navbar %} fixed-{{ site.fixed_navbar }} {% endif %}" style="background-color: #188eac !important">
     <div class="container">
-        <div class="navbar-brand">
-            <a href="{{ site.baseurl }}/" class="navbar-item">
-                <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.title }}" class="logo">
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-start">
-                <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">Home</a>
+        <a href="{{ site.baseurl }}/" class="navbar-brand">
+            <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.title }}" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="{{ site.baseurl }}/" class="nav-link {% if page.url == "/" %}active{% endif %}">Home</a>
+                </li>
                 {% if site.data.navigation %}
-                {% for item in site.data.navigation %}
-                    {% if item.dropdown %}
-                    <div class="navbar-item has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
-                        <a href="{{ item.link | relative_url }}" class="navbar-link {% if page.url contains item.link %}is-active{% endif %}">{{ item.name }}</a>
-                        <div class="navbar-dropdown">
-                            {% for subitem in item.dropdown %}
-                            <a href="{{ subitem.link | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    {% else %}
-                    <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
-                    {% endif %}
-                {% endfor %}
+                    {% for item in site.data.navigation %}
+                        {% if item.dropdown %}
+                            <li class="nav-item dropdown">
+                                <a href="{{ item.link | relative_url }}" class="nav-link dropdown-toggle {% if page.url contains item.link %}active{% endif %}" data-bs-toggle="dropdown">{{ item.name }}</a>
+                                <ul class="dropdown-menu">
+                                    {% for subitem in item.dropdown %}
+                                        <li>
+                                            <a href="{{ subitem.link | relative_url }}" class="dropdown-item {% if subitem.link == page.url %}active{% endif %}">{{ subitem.name }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% else %}
+                            <li class="nav-item">
+                                <a href="{{ item.link | relative_url }}" class="nav-link {% if item.link == page.url %}active{% endif %}">{{ item.name }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
                 {% endif %}
-            </div>
-
-           
-
+            </ul>
         </div>
     </div>
 </nav>

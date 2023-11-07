@@ -16,7 +16,7 @@
            href="/favicon.png" 
     />
     <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
     
     
@@ -32,115 +32,139 @@
 <meta property="og:site_name" content="Non solo Marchi&amp;Brevetti" />
 <meta property="og:image" content="https://via.placeholder.com/640x480" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-11-07T22:29:39+01:00" />
+<meta property="article:published_time" content="2023-11-07T22:42:53+01:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://via.placeholder.com/640x480" />
 <meta property="twitter:title" content="Product 2 Name" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-07T22:29:39+01:00","datePublished":"2023-11-07T22:29:39+01:00","description":"This is the content about the product.","headline":"Product 2 Name","image":"https://via.placeholder.com/640x480","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/products/product2/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/img/logo_marchi.svg"}},"url":"http://localhost:4000/products/product2/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-07T22:42:53+01:00","datePublished":"2023-11-07T22:42:53+01:00","description":"This is the content about the product.","headline":"Product 2 Name","image":"https://via.placeholder.com/640x480","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/products/product2/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/img/logo_marchi.svg"}},"url":"http://localhost:4000/products/product2/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts -->
-<script>
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('navbarSupportedContent')
-const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
-navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
-})
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
   <body>
-    <nav class="navbar is-primary  is-fixed-top " x-data="{ openNav: false }">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary  fixed-top " style="background-color: #188eac !important">
     <div class="container">
-        <div class="navbar-brand">
-            <a href="/" class="navbar-item">
-                <img src="/img/logo_marchi.svg" alt="Non solo Marchi&Brevetti" class="logo">
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-start">
-                <a href="/" class="navbar-item ">Home</a>
-                
+        <a href="/" class="navbar-brand">
+            <img src="/img/logo_marchi.svg" alt="Non solo Marchi&Brevetti" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/" class="nav-link ">Home</a>
+                </li>
                 
                     
-                    <a href="/chisiamo/" class="navbar-item ">Chi Siamo</a>
+                        
+                            <li class="nav-item">
+                                <a href="/chisiamo/" class="nav-link ">Chi Siamo</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="nav-item dropdown">
+                                <a href="/" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Servizi</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        <li>
+                                            <a href="/marchi/" class="dropdown-item ">Marchi</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/brevetti/" class="dropdown-item ">Brevetti</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/disegniemodelli/" class="dropdown-item ">Disegni e Modelli</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/dirittidautore/" class="dropdown-item ">Diritti D'Autore</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/segretiindustriali/" class="dropdown-item ">Segreti Industriali e Know How</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/nomiadominio/" class="dropdown-item ">Nomi a Dominio</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/blockchain/" class="dropdown-item ">Blockchain</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/software/" class="dropdown-item ">Software</a>
+                                        </li>
+                                    
+                                </ul>
+                            </li>
+                        
+                    
+                        
+                            <li class="nav-item dropdown">
+                                <a href="/" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Consulenza</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        <li>
+                                            <a href="/ricercheanteriorita/" class="dropdown-item ">Ricerche di Anterioritá</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/sorveglianza/" class="dropdown-item ">Sorveglianza Doganale e Concorrenza</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/contrattualistica/" class="dropdown-item ">Contrattualistica</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/contenzioso/" class="dropdown-item ">Contenzioso</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/duediligence/" class="dropdown-item ">Due Diligence</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/webprotection/" class="dropdown-item ">Web Protection</a>
+                                        </li>
+                                    
+                                </ul>
+                            </li>
+                        
+                    
+                        
+                            <li class="nav-item dropdown">
+                                <a href="/" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Settori</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        <li>
+                                            <a href="/aziende/" class="dropdown-item ">Aziende</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/startup-privati/" class="dropdown-item ">Start-up e Privati</a>
+                                        </li>
+                                    
+                                </ul>
+                            </li>
+                        
+                    
+                        
+                            <li class="nav-item">
+                                <a href="/contatti/" class="nav-link ">Contatti</a>
+                            </li>
+                        
                     
                 
-                    
-                    <div class="navbar-item has-dropdown is-hoverable ">
-                        <a href="/" class="navbar-link ">Servizi</a>
-                        <div class="navbar-dropdown">
-                            
-                            <a href="/marchi/" class="navbar-item ">Marchi</a>
-                            
-                            <a href="/brevetti/" class="navbar-item ">Brevetti</a>
-                            
-                            <a href="/disegniemodelli/" class="navbar-item ">Disegni e Modelli</a>
-                            
-                            <a href="/dirittidautore/" class="navbar-item ">Diritti D'Autore</a>
-                            
-                            <a href="/segretiindustriali/" class="navbar-item ">Segreti Industriali e Know How</a>
-                            
-                            <a href="/nomiadominio/" class="navbar-item ">Nomi a Dominio</a>
-                            
-                            <a href="/blockchain/" class="navbar-item ">Blockchain</a>
-                            
-                            <a href="/software/" class="navbar-item ">Software</a>
-                            
-                        </div>
-                    </div>
-                    
-                
-                    
-                    <div class="navbar-item has-dropdown is-hoverable ">
-                        <a href="/" class="navbar-link ">Consulenza</a>
-                        <div class="navbar-dropdown">
-                            
-                            <a href="/ricercheanteriorita/" class="navbar-item ">Ricerche di Anterioritá</a>
-                            
-                            <a href="/sorveglianza/" class="navbar-item ">Sorveglianza Doganale e Concorrenza</a>
-                            
-                            <a href="/contrattualistica/" class="navbar-item ">Contrattualistica</a>
-                            
-                            <a href="/contenzioso/" class="navbar-item ">Contenzioso</a>
-                            
-                            <a href="/duediligence/" class="navbar-item ">Due Diligence</a>
-                            
-                            <a href="/webprotection/" class="navbar-item ">Web Protection</a>
-                            
-                        </div>
-                    </div>
-                    
-                
-                    
-                    <div class="navbar-item has-dropdown is-hoverable ">
-                        <a href="/" class="navbar-link ">Settori</a>
-                        <div class="navbar-dropdown">
-                            
-                            <a href="/aziende/" class="navbar-item ">Aziende</a>
-                            
-                            <a href="/startup-privati/" class="navbar-item ">Start-up e Privati</a>
-                            
-                        </div>
-                    </div>
-                    
-                
-                    
-                    <a href="/contatti/" class="navbar-item ">Contatti</a>
-                    
-                
-                
-            </div>
-
-           
-
+            </ul>
         </div>
     </div>
 </nav>
